@@ -1,0 +1,57 @@
+//Advance Comment System
+//This function will be called in the next section
+function advanced_comment($comment, $args, $depth) {
+   $GLOBALS['comment'] = $comment; ?>
+
+    <!--author comments-->
+    <?php if (1==$comment->user_id) { ?>
+    <li <?php echo $oddcomment; ?>id="comment-<?php comment_ID() ?>">
+        <div class="authorcomment">
+            <div class="the-avatar">
+                <?php echo get_avatar( $comment, 90 ); ?>                
+            </div><!--//the-avatar-->
+        
+            <div class="the-comment">
+                <div class="commentmetadata">        
+                    <strong><?php comment_author_link() ?></strong>&nbsp;<?php _e('says: '); ?><?php edit_comment_link('[Edit]','',''); ?>               
+                </div><!--//commentmetadata-->
+                
+            	<?php comment_text() ?>
+
+                <div class="reply">
+                  <?php comment_reply_link(array_merge( $args, array('depth' => $depth, 'max_depth' => $args['max_depth']))) ?>
+                </div>                      
+            </div><!--//the-comment-->           
+        </div><!--//authorcomment-->
+         
+         
+    	<div class="timestamp right"><a href="#comment-<?php comment_ID() ?>" title=""><time><?php comment_date('l - F j, Y') ?><?php _e(' at '); ?><?php comment_time('h:i A') ?></time></a></div>
+    </li>
+    <?php } else { ?>
+    <!--author comments--> 
+    
+	<li <?php comment_class(); ?> id="li-comment-<?php comment_ID() ?>">
+        <div class="commentbox">
+            <div class="the-avatar">
+                <?php echo get_avatar( $comment, 90 ); ?>
+            </div><!--//the-avatar-->
+ 
+            <div class="the-comment">
+                <div class="commentmetadata">        
+                	<strong><?php comment_author_link() ?></strong>&nbsp;<?php _e('says: '); ?><?php edit_comment_link('[Edit]','',''); ?>               
+                        <?php if ($comment->comment_approved == '0') : ?>
+                        <em><?php _e('<span class="moderation">Your comment is awaiting moderation.</span>'); ?></em>
+                        <?php endif; ?>
+                </div><!--//commentmetadata--> 
+                
+            	<?php comment_text() ?>
+            
+                <div class="reply">
+                  <?php comment_reply_link(array_merge( $args, array('depth' => $depth, 'max_depth' => $args['max_depth']))) ?>
+                </div>                       
+            </div><!--//the-comment-->                       
+        </div><!--//commentbox-->        
+        <div class="timestamp right"><a href="#comment-<?php comment_ID() ?>" title=""><time><?php comment_date('l - F j, Y') ?><?php _e(' at '); ?><?php comment_time('h:i A') ?></time></a></div>
+	</li>
+    <?php } ?>
+<?php } ?>

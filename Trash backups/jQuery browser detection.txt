@@ -1,0 +1,5 @@
+$.browser.msie
+$.browser.webkit
+$.browser.opera
+$.browser.mozilla
+$.browser.safari

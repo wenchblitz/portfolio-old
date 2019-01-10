@@ -1,0 +1,13 @@
+<?php 
+	if ( $wp_query->is_posts_page ) {
+	query_posts($query_string . '&cat=-3');
+	}
+?>
+
+<?php 
+	if ( $wp_query->is_posts_page ) {
+	query_posts('cat=-3');
+	}
+?>
+
+exclude category 3 from post page

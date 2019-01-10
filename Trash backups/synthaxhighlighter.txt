@@ -1,0 +1,19 @@
+[css]
+.thumbs-preview { 
+	margin: 0 auto; 
+	padding: 0; 
+	clear: both !important; 
+	height: auto !important; 
+	height: 100%;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+	.thumbs-preview { 
+	margin: 0 auto; 
+	padding: 0; 
+	clear: both !important; 
+	min-height: 1025px; 
+	height: auto !important; 
+	height: 100%;}
+}
+[/css]

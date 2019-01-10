@@ -1,0 +1,24 @@
+@charset "utf-8";
+/* CSS Document */
+
+@font-face {	
+	font-family: Lucida_Italic;
+	src: url('LCALLIG_0.TTF');
+}
+
+#the-contactform { margin: 0 auto; padding: 0; width: 278px; height: 184px; border: 0 solid #c90;}
+#the-contactform .txtbox { margin: 0; padding: 0 0 0 8px; width: 270px; height: 25px; font-family: Tahoma; font-size: 11px; color: #777; text-shadow: 0 1px 0 #fff; border: none; background:url(images/textbox.jpg) no-repeat 0 0;}
+#the-contactform .txtarea { margin: 0 auto; padding: 8px 8px 0 8px; width: 270px; height: 97px; font-family: Tahoma; font-size: 11px; color: #777; text-shadow: 0 1px 0 #fff; border: none; background: url(images/textarea.jpg) no-repeat 0 0;}
+#the-contactform .submit { margin: 0; padding: 0; width: 65px; height: 15px; border: none; text-indent: -9999px; background: url(images/submit-button.png) no-repeat 0 0;}
+#the-contactform .submit:hover {background: url(images/submit-button.png) no-repeat 0 -15px; cursor: pointer;}
+#the-contactform p { margin: 0 auto 5px; padding: 0;}
+.right { margin: -20px 0 0 0; padding: 0; float: right; font-family: Tahoma; font-size: 11px; color: #777; text-shadow: 0 1px 0 #fff; font-style: italic;}
+
+/************CONTACT FORM2****************/
+
+#the-contactform2 { margin: 0 auto 10px; padding:  31px 0 0 29px; width: 589px; height: 622px; border: 0 solid #c90; background: url(images/form2-bg.jpg) no-repeat 0 0;}
+#the-contactform2 .txtbox2 { margin: 0 auto 3px; padding: 0 15px 0 15px; width: 530px; height: 53px; font-family: Lucida_Italic; font-size: 16px; color: #777; text-shadow: 0 1px 0 #fff; border: none; background:url(images/textbox2.png) no-repeat 0 0;}
+#the-contactform2 .txtarea2 { margin: 0 auto -8px; padding: 15px; width: 542px; height: 333px; font-family: Lucida_Italic; font-size: 16px; color: #777; text-shadow: 0 1px 0 #fff; border: none; background: url(images/textarea2.png) no-repeat 0 0;}
+#the-contactform2 .submit2 { margin: 0; padding: 0; width: 560px; height: 52px; border: none; text-indent: -9999px; background: url(images/submit-button2.png) no-repeat 0 0;}
+#the-contactform2 .submit2:hover {background: url(images/submit-button2.png) no-repeat 0 -52px; cursor: pointer;}
+#the-contactform2 p { margin: 0 auto 5px; padding: 0;}

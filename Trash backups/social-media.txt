@@ -1,0 +1,16 @@
+       		<!--<ul id="social">
+            	<li><a href="javascript:void(0)"><img src="<?php bloginfo('template_url');?>/images/facebook.png" alt="" /></a></li>
+                <li><a href="javascript:void(0)"><img src="<?php bloginfo('template_url');?>/images/twitter.png" alt="" /></a></li>
+                <li><a href="javascript:void(0)"><img src="<?php bloginfo('template_url');?>/images/youtube.png" alt="" /></a></li>
+                <li><a href="javascript:void(0)"><img src="<?php bloginfo('template_url');?>/images/bookmark.png" alt="" /></a></li>
+            </ul>--><!--ul#social-->
+            
+            <!-- AddThis Button BEGIN -->
+            <!--<div class="addthis_toolbox addthis_32x32_style addthis_default_style">
+                <a class="addthis_button_facebook_follow" addthis:userid="wenchblitz"></a>
+                <a class="addthis_button_twitter_follow" addthis:userid="wenchblitz"></a>
+                <a class="addthis_button_google_follow" addthis:userid="wenchblitz"></a>
+                <a class="addthis_button_youtube_follow" addthis:userid="wenchblitz"></a>
+            </div>
+            <script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=ra-4f4c8e5c6ff3007c"></script>-->
+			<!-- AddThis Button END -->

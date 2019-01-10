@@ -1,0 +1,77 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+<title>jQuery Caption | TutsValley.com</title>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript">
+$(window).load(function(){
+	//for each description div...
+	$('div.description').each(function(){
+		//...set the opacity to 0...
+		$(this).css('opacity', 0);
+		//..set width same as the image...
+		$(this).css('width', $(this).siblings('img').width());
+		//...get the parent (the wrapper) and set it's width same as the image width... '
+		$(this).parent().css('width', $(this).siblings('img').width());
+		//...set the display to block
+		$(this).css('display', 'block');
+	});
+	
+	$('div.wrapper').hover(function(){
+		//when mouse hover over the wrapper div
+		//get it's children elements with class descriptio
+		//and show it using fadeTo
+		$(this).children('.description').stop().fadeTo(500, 0.7);
+	},function(){
+		//when mouse out of the wrapper div
+		//use fadeTo to hide the div
+		$(this).children('.description').stop().fadeTo(500, 0);
+	});
+	
+});
+  
+</script>
+<style>
+div.wrapper{
+	position:relative; /* important(so we can absolutely position the description div */ 
+}
+div.description{
+	position:absolute; /* absolute position (so we can position it where we want)*/
+	bottom:0px; /* position will be on bottom */
+	left:0px;
+	display:none; /* hide it */
+	/* styling bellow */
+	background-color:black;
+	font-family: 'tahoma';
+	font-size:15px;
+	color:white;
+}
+div.description_content{
+	padding:10px;
+}
+
+</style>
+</head>
+<body>
+	<!-- wrapper div -->
+	<div class='wrapper'>
+		<!-- image -->
+		<img src='wolf.jpg' />
+		<!-- description div -->
+		<div class='description'>
+			<!-- description content -->
+			<div class='description_content'>The pack, the basic unit of wolf social life, is usually a family group. It is made up of animals related to each other by blood and family ties of affection and mutual aid. </div>
+			<!-- end description content -->
+		</div>
+		<!-- end description div -->
+	</div>
+	<!-- end wrapper div -->
+	<br />
+	<div class='wrapper'>
+		<img src='dolphin.jpg' />
+		<div class='description'>
+			<div class='description_content'>Dolphins sleep with only one half of their brain.Dolphins are conscious breathers. If they should go unconscious they would die.They float at hte surface and keep one eye open at all times. </div>
+		</div>
+	</div>
+</body>
+</html>
